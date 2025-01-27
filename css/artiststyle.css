@@ -1,0 +1,220 @@
+body {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-family: 'Questrial', sans-serif;
+}
+
+.main{
+  width: 93% !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* navigation bar css */
+.nav {
+  z-index: 1000;
+  width: 100% !important;
+  margin: 0% !important;
+}
+
+.navigationbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.navigationbar li {
+  float: left;
+}
+
+.navigationbar li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+  font-size: medium;
+  font-weight: bold;
+}
+
+.navigationbar li a:hover:not(.active) {
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: large;
+}
+
+.navigationbar .active {
+  color: rgb(81, 81, 81);
+  text-decoration: underline;
+  text-decoration-color:  rgb(172, 75, 170);
+  cursor: pointer;
+  background: -webkit-linear-gradient(#f8b4ff, #592cea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.active, .li:hover {
+  color: rgb(81, 81, 81);
+  text-decoration: underline;
+  text-decoration-color: rgb(81, 81, 81);
+  cursor: pointer;
+}
+
+/* Artist details css */
+section {
+  background-color:rgb(0, 0, 0);
+  display:flex;
+  width:93vw;
+  gap:20px;
+  margin:0 auto;
+  justify-content:center;
+  flex-wrap: wrap;
+  }
+  
+  
+  /* individual artisr box styling */
+  img{
+    width: 363px;
+  }
+  .box {
+  border:1px solid rgb(0, 0, 0);
+  padding-top:21px;
+  }
+  .box > p {
+  margin:0;
+  }
+  .box > button {
+  border:1px solid #e056fd;
+  background-color:#e056fd;
+  border-radius:5px;
+  color:white;
+  padding:8px 12px;
+  cursor:pointer;
+  }
+
+.artistsgrid {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+
+.artistimg {
+  display: inline;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.artistdetails {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 89.4%;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+.artistsgrid:hover .artistdetails {
+  opacity: 1;
+}
+
+.additonal_information{
+ text-align: center;
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.additonal_information a{
+  text-decoration: none;
+  color: black;
+}
+
+.additonal_information a:hover{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.additonal_information p{
+  font-size: medium;
+}
+
+.additonal_information button{
+  padding: 12px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: medium;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.additonal_information button:hover{
+  padding: 12px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: large;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: black;
+  color: white;
+  border: 3px solid white;
+  cursor: pointer;
+}
+/* Footer css */
+.socialmedia {
+  cursor: pointer;
+  align-items: center;
+  margin: 12px;
+}
+
+i:hover{
+  color: white;
+}
+
+.footericon{
+  width: 30px;
+}
+footer{
+  align-items: center;
+}
+.iconsection {
+  background-color: rgb(0, 0, 0);
+  width: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  position: static;
+  bottom: 0;
+  display: flex;
+}
+.footerlogo{
+  text-align: center;
+}
+.copywrite{
+  text-align: center;
+  color: #c2c4c7;
+  display: inline;
+}
+.footerlinks{
+ color: #c2c4c7;
+
+}
+
+.footerlinks:hover{
+  color: white;
+}
+
+ul>li{
+  display: inline-block;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+
+

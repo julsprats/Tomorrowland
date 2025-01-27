@@ -1,0 +1,219 @@
+.nav {
+    z-index: 1000;
+    width: 100% !important;
+    margin: 0% !important;
+  }
+  
+  
+  .navigationbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+  
+  
+  .navigationbar li {
+    float: left;
+  }
+  
+  
+  .navigationbar li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+ }
+
+
+ .navigationbar li a:hover:not(.active) {
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: large;
+}
+
+.navigationbar .active {
+  color: rgb(81, 81, 81);
+  text-decoration: underline;
+  text-decoration-color:  rgb(172, 75, 170);
+  cursor: pointer;
+  background: -webkit-linear-gradient(#f8b4ff, #592cea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.active, .li:hover {
+  color: rgb(81, 81, 81);
+  text-decoration: underline;
+  text-decoration-color: rgb(81, 81, 81);
+  cursor: pointer;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Questrial', sans-serif;
+}
+ main{
+margin-left: 30px;
+ }
+.buytickets{
+  max-width: 75%;
+}
+
+/* Add CSS styles to align the radio button with the label text */
+.radio-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Push elements to both ends */
+}
+
+/* Add CSS styles for positioning the number input field */
+.quantity-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align the input field to the right within its container */
+}
+hr{
+  border: 1px solid rgb(167, 163, 163);
+}
+
+.radiobutton{
+  width: 39px;
+  margin: 30.9px 30px 30px 30px;
+}
+input{
+  accent-color:  #592cea;
+}
+/* Add CSS styles to align the radio button with the label text */
+.radio-label {
+    display: flex;
+}
+
+.ticketdetails{
+display: block;
+margin: 0px;
+}
+
+.number-input{
+  width: 24px;
+  margin-left: 390px;
+  margin-right: 12px !important;
+
+}
+/* Add CSS styles for the form */
+
+#ticketForm {
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+}
+#cardInput{
+  width: 142.5px;
+  height: 30px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+tr.tax th{
+  border-bottom: solid 3px #909091;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.tableheading{
+  width: 210px;
+  padding-top: 30px;
+}
+.tabledata{
+  padding-top: 30px !important;
+}
+.quantity-input{
+  width: 30px;
+  text-align: center;
+}
+
+#payNowButton {
+    margin-top: 1%;
+}
+table{
+  text-align: left;
+}
+.socialmedia {
+    cursor: pointer;
+    align-items: center;
+    margin: 12px;
+  }
+  
+  .line{
+    background-color: white;
+    color: white;
+  }
+  i:hover{
+    color: white;
+  }
+  
+ #payNowButton {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    width: 150px;
+    font-weight: bold;
+}
+.error-mesage{
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  font-size: larger;
+  margin-top: 12px;
+}
+  .footericon{
+    width: 30px;
+  }
+  footer{
+    align-items: center;
+  }
+  .iconsection {
+    background-color: rgb(0, 0, 0);
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+    bottom: 0;
+    display: flex;
+  }
+  .footerlogo{
+    text-align: center;
+  }
+  .copywrite{
+    text-align: center;
+    color: #c2c4c7;
+    display: inline;
+  }
+  .footerlinks{
+   color: #c2c4c7;
+  
+  
+  }
+  
+  
+  .footerlinks:hover{
+    color: white;
+  }
+  
+  
+  ul>li{
+    display: inline-block;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-size: 12px;
+    font-weight: bolder;
+  }
+  

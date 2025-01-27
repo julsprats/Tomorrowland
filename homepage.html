@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/homepage.css" />
+    <title>TOMORROWLAND</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+        integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div>
+                <ul id="nav" class="navigationbar">
+                    <li><a href="./homepage.html" class="navlist active">Home</a></li>
+                    <li><a href="./artist.html" class="navlist">Artist</a></li>
+                    <li><a href="./purchasepage.html" class=" navlist">Buy Ticket</a></li>
+                    <li><a class="navlist">Contact</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <h1 class="title">TOMORROWLAND</h1>
+        <h2>The largest annual electronic dance music festival held in Boom, Belgium.</h2>
+        <h2>JULY 19th, 20th, 21st</h2>
+        <h2>BELGIUM</h2>
+    </main>
+
+    <section class="lineup">
+        <div>
+            <h1>Line Up</h1>
+            <p>There's no getting around it, anyone who has seen the Tomorrowland line up wants and needs to go to
+                the festival. The 400,000 visitors will go crazy to over 600 different artists spread over two weekends.
+            </p>
+            <button><a href="./artist.html">VIEW ARTISTS</a></button>
+        </div>
+        <div>
+            <img class="artistsimg" src="https://i.ytimg.com/vi/4a-WM6ab8Tk/maxresdefault.jpg" />
+        </div>
+    </section>
+
+    <section class="tmrtickets">
+        <h1 class="mainheading">TOMORROWLAND TICKETS</h1>
+        <h1>Full Madness Pass & Day Pass</h1>
+        <div class="tickets">
+            <div id="box">
+                <img id="ticketsimg"
+                    src="./assests/tickets3.jpg" />
+                <h1>Full Madness Pass</h1>
+                <h1>$340</h1>
+                <p>A Full Madness Pass gives you access to Tomorrowland on Friday, Saturday and Sunday. </p>
+                <button><a href="./purchasepage.html">BUY TICKETS <i class="fa-solid fa-greater-than"
+                            style="color: #000000;"></i></a></button>
+            </div>
+
+            <div id="box">
+                <img id="ticketsimg"
+                    src="./assests/tickets2.jpeg" />
+                <h1>Day Pass</h1>
+                <h1>$110</h1>
+                <p>A Day Pass gives you access to Tomorrowland on Friday, Saturday or Sunday. </p>
+                <p>These are the different Day Passes:</p>
+                <ul>
+                    <li>Magical Friday</li>
+                    <li>Incredible Saturday</li>
+                    <li>Glorious Sunday</li>
+                </ul>
+                <button><a href="./purchasepage.html">BUY TICKETS <i class="fa-solid fa-greater-than"
+                            style="color: #000000;"></i></a></button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h1 class="maph1">Location</h1>
+        <!-- Specify the map and it's dimensions -->
+        <div id="map" style="width: 100%; height: 500px"></div>
+
+        <!-- Get the leaflet JavaScript file -->
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+            integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+            crossorigin=""></script>
+        <script>
+            // Initialize the map
+            const map = L.map('map')
+
+            // Get the tile layer from OpenStreetMaps
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+
+                // Specify the maximum zoom of the map
+                maxZoom: 19,
+
+                // Set the attribution for OpenStreetMaps
+                attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            // Set the view of the map
+            // with the latitude, longitude and the zoom value
+            map.setView([51.08831765401142, 4.381973625304044], 16);
+
+            // Show a market at the position of the Eiffel Tower
+            let eiffelMarker = L.marker([51.08831765401142, 4.381973625304044]).addTo(map);
+
+            // Bind popup to the marker with a popup
+            eiffelMarker.bindPopup("Tomorrowland").openPopup();
+        </script>
+    </section>
+
+    <footer>
+        <div class="footerlogo">
+            <img src="./assests/logo/Tomorrowland.png" alt="Tomorrowland">
+        </div>
+        <div class="iconsection">
+            <div class="socialmedia">
+                <i class="fa-brands fa-facebook" style="color: #c2c4c7;"></i>
+            </div>
+            <div class="socialmedia">
+                <i class="fa-brands fa-instagram" style="color: #c2c4c7;"></i>
+            </div>
+            <div class="socialmedia">
+                <i class="fa-brands fa-twitter" style="color: #c2c4c7;"></i>
+            </div>
+            <div class="socialmedia">
+                <i class="fa-brands fa-youtube" style="color: #c2c4c7;"></i>
+            </div>
+            <div class="socialmedia">
+                <i class="fa-brands fa-tiktok" style="color: #c2c4c7;"></i>
+            </div>
+        </div>
+        
+        <div class="copywrite">
+            <ul>
+                <li> &copy; <em id="date"> </em>2023 T440 Group 2</li>
+                <li><a class="footerlinks" href="#">WEBSITE TERMS OF USE</a></li>
+                <li><a class="footerlinks" href="#">PRIVACY POLICY</a></li>
+                <li><a class="footerlinks" href="#">TERMS & CONDITIOINS</a></li>
+                <li><a class="footerlinks" href="#">FAQ & CONTACT</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>

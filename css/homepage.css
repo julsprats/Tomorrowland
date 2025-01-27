@@ -1,0 +1,228 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: 'Questrial', sans-serif;
+    color: white;
+}
+
+.nav {
+    z-index: 1000;
+    width: 100% !important;
+    margin: 0% !important;
+}
+
+
+.navigationbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+
+.navigationbar li {
+    float: left;
+}
+
+
+.navigationbar li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+}
+
+
+.navigationbar li a:hover:not(.active) {
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: large;
+}
+
+.navigationbar .active {
+    color: rgb(81, 81, 81);
+    text-decoration: underline;
+    text-decoration-color: rgb(172, 75, 170);
+    cursor: pointer;
+    background: -webkit-linear-gradient(#f8b4ff, #592cea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.active,
+.li:hover {
+    color: rgb(81, 81, 81);
+    text-decoration: underline;
+    text-decoration-color: rgb(81, 81, 81);
+    cursor: pointer;
+}
+
+
+main {
+    background: linear-gradient(to bottom, transparent, black),
+        url(https://karlobag.eu/images/upload/winaa.jpg);
+    height: 900px;
+    margin-top: 0px !important;
+}
+
+main h2 {
+    text-align: center;
+}
+
+.lineup {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.artistsimg {
+    width: 110vh;
+}
+
+.tickets {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#box {
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+
+.title {
+    font-size: 80px;
+    text-align: center;
+    padding-top: 150px;
+    margin-top: 0px;
+}
+
+#ticketsimg {
+    padding: 0;
+    margin: 0;
+    width: 100vh;
+}
+
+.tmrtickets {
+    padding-top: 50px;
+}
+
+.tmrtickets h1 {
+    text-align: center;
+    margin-top: 0px !important;
+}
+
+#box h1,
+h2 {
+    text-align: left;
+}
+
+.lineup a {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    width: 150px;
+    font-weight: bold;
+}
+
+#box a {
+    color: black;
+    text-decoration: none;
+    padding: 0;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    width: 120px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#box button {
+    background: none;
+    border: none;
+}
+
+.maph1 {
+    padding-left: 50px;
+}
+
+.socialmedia {
+    cursor: pointer;
+    align-items: center;
+    margin: 12px;
+}
+
+
+i:hover {
+    color: white;
+}
+
+
+.footericon {
+    width: 30px;
+}
+
+footer {
+    align-items: center;
+}
+
+.iconsection {
+    background-color: rgb(0, 0, 0);
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+    bottom: 0;
+    display: flex;
+}
+
+.footerlogo {
+    text-align: center;
+}
+
+.copywrite {
+    text-align: center;
+    color: #c2c4c7;
+    display: inline;
+}
+
+.footerlinks {
+    color: #c2c4c7;
+
+
+}
+
+
+.footerlinks:hover {
+    color: white;
+}
+
+
+footer ul>li {
+    display: inline-block;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-size: 12px;
+    font-weight: bolder;
+}

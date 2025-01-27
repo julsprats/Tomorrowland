@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Purchase Ticket</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+        <link rel= "stylesheet" href="./css/ticketspage.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+        integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+    <body>
+        <!-- logo and navigation menu -->
+        <header>
+            <nav>
+             <!-- menu --> 
+             <div class="nav">
+                <ul id="nav" class="navigationbar">
+                    <li><a href="./homepage.html" class="navlist">Home</a></li>
+                    <li><a href="./artist.html" class="navlist ">Artist</a></li>
+                    <li><a href="./purchasepage.html" class="active navlist">Buy Ticket</a></li>
+                    <li><a class="navlist">Contact</a></li>
+                </ul>
+            </div>  
+            </nav>
+            <!-- header text -->
+            <h1>TOMORROWLAND TICKETS</h1>
+       </header>
+        <!-- main section of website -->
+        <main>
+            <!-- main background image -->
+            <!-- <img id="purchaseTicketBG" src="assets/purchaseticketbg.jpeg" alt = "Nature Sunset Background" >-->
+
+            <!-- Purchase section -->
+            <section class="buytickets">
+
+                    <h3> Buy Tickets</h3>
+                    <!-- Form Container -->
+                    <div class="ticketformContainer">
+                        <form id="ticketForm">
+                            <!-- Day Pass Label Container -->
+                            <div class="radio-container">
+                                <div class="radio-label">
+                                    <div class="radiobutton">
+                                        <input type="radio" id="dayPass" name="radioButton" value="dayPass" checked/>
+                                    </div>
+                                        <!-- <img src="descriptor-image.jpg" alt="Descriptor Image" class="descriptor-image"> -->
+                                        <div class="ticketdetails">
+                                           <b>Day Pass</b>
+                                            <p>(Comfort) access to Tomorrowland for one day</p>
+                                            <p>$1,100</p>
+                                        </div>
+                                </div>
+                                <!-- Add the number input field to the far right -->
+                                <div class = "quantity-input">
+                                    <label for="quantity">Enter Quantity</label>
+                                    <input type="number" class="number-input" id="dayPassQuantity" min="0" value="0">
+                                </div>
+                            </div>
+                            <hr class="line">
+
+                            <!-- Full Madness Pass Label Container -->
+                            <div class="radio-container">
+                                <label class="radio-label">
+                                    <div class="radiobutton">
+                                        <input type="radio" id="fullMadnessPass" name="radioButton" value="fullMadnessPass">
+
+                                    </div>
+                                    <!-- <img src="descriptor-image.jpg" alt="Descriptor Image" class="descriptor-image"> -->
+                                    <div class="ticketdetails">
+                                        <b>Full Madness Pass </b>
+                                        <p>(Comfort) access to Tomorrowland on Friday, Saturday, Sunday</p>
+                                        <p>$3,000</p>
+                                    </div>
+                                    
+                                    
+                                </label>
+                                <!-- Add the number input field to the far right -->
+                                <div class="quantity-input">
+                                    <input type="number" class="number-input" id="fullMadnessPassQuantity" min="0" value="0">
+                                </div>   
+                            </div>
+                            <hr>
+                        </form>
+                    </div>
+                    <div class="payment_div">
+                        <h3> Payment</h3>
+                        <h4> Pay with Credit Card </h4>
+                        <form>
+                            <label for="cardInput">Card Number</label><br>
+                            <input type="text" id="cardInput" placeholder="123 456" minlength="6" maxlength="6"><br>
+                            <button onclick="payNowClicked()" id="payNowButton" type="button" name="submit" >Pay Now</button>
+    
+                        </form>
+                    </div>
+                    
+
+            </section>
+            <!-- Order Summary section -->
+            <section id="orderSummary">
+                
+            </section>
+
+
+        </main>
+
+
+
+
+        <footer>
+            <div class="footerlogo">
+                <img src="./assests/logo/Tomorrowland.png" alt="Tomorrowland">
+            </div>
+            <div class="iconsection">
+                <div class="socialmedia">
+                    <!-- <img class="footericon" src="./assests/icons/instagram.png"> -->
+                    <i class="fa-brands fa-facebook" style="color: #c2c4c7;"></i>
+                </div>
+                <div class="socialmedia">
+                    <!-- <img style="border-radius: 30px;" class="footericon" src="./assests/icons/facebook.png"> -->
+                    <i class="fa-brands fa-instagram" style="color: #c2c4c7;"></i>
+                </div>
+                <div class="socialmedia">
+                    <!-- <img class="footericon" src="./assests/icons/twitter.png"> -->
+                    <i class="fa-brands fa-twitter" style="color: #c2c4c7;"></i>
+                </div>
+                <div class="socialmedia">
+                    <!-- <img class="footericon" src="./assests/icons/youtube.png"> -->
+                    <i class="fa-brands fa-youtube" style="color: #c2c4c7;"></i>
+                </div>
+                <div class="socialmedia">
+                    <!-- <img class="footericon" src="./assests/icons/youtube.png"> -->
+                    <i class="fa-brands fa-tiktok" style="color: #c2c4c7;"></i>
+                </div>
+            </div>
+            <div class="copywrite">
+    
+    
+                <ul>
+                    <li> &copy; <em id="date"> </em>2023 T440 Group 2</li>
+                    <li><a class="footerlinks" href="#">WEBSITE TERMS OF USE</a></li>
+                    <li><a class="footerlinks" href="#">PRIVACY POLICY</a></li>
+                    <li><a class="footerlinks" href="#">TERMS & CONDITIOINS</a></li>
+                    <li><a class="footerlinks" href="#">FAQ & CONTACT</a></li>
+                </ul>
+            </div>
+    
+
+        </footer>
+        <script src="./js/purchasepage.js"></script>
+    </body>
+
+</html>
